@@ -1,0 +1,29 @@
+.LoaderComponent {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+}
+.LoaderComponent .LoaderComponent__logo {
+  width: 100px;
+  height: 100px;
+  top: calc(50vh - 50px);
+  left: calc(50% - 50px);
+  position: fixed;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.LoaderComponent .LoaderComponent__element {
+  background-color: orange;
+  width: 16.6666666667%;
+  height: 100vh;
+  box-shadow: inset 0 0 5px rgb(31, 31, 31);
+  border: 1px solid rgb(31, 31, 31);
+  transition: 0.2s;
+}
+
+/*# sourceMappingURL=LoaderComponent.css.map */

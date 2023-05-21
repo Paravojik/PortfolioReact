@@ -1,0 +1,29 @@
+.MainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.MainPage .MainPage__text {
+  z-index: 1;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(20, 20, 20);
+  border-radius: 10px;
+  color: white;
+}
+.MainPage .MainPage__text .MainPage__text__typed {
+  font-size: 24px;
+  background: rgb(237, 237, 235);
+  background: linear-gradient(227deg, rgba(237, 237, 235, 0.9809173669) 18%, rgb(232, 236, 234) 20%, rgb(145, 220, 220) 53%, rgb(138, 23, 200) 95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*# sourceMappingURL=MainPage.css.map */
