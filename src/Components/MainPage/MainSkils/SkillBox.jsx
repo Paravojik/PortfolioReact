@@ -37,12 +37,14 @@ function SkillBox(props){
     function openSkill(){
         setIsVisibleInfo(true)
         document.getElementById('MainPage__text').style.zIndex='0'
+        document.getElementById('MainPage__downoload').style.zIndex='0'
     }
     function closeSkill(close){
         // setIsVisibleInfo(close)
         setTimeout(function(){
             setIsVisibleInfo(close)
             document.getElementById('MainPage__text').style.zIndex='1'
+            document.getElementById('MainPage__downoload').style.zIndex='1'
         },10)
         console.log('fs',isVisibleInfo)
     }

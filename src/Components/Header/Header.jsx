@@ -4,13 +4,16 @@ import './Header.css'
 function Header(props){
     let [isVisibleLoader,setIsVisibleLoader]=useState(false)
     let [loaderChange,setLoaderChange]=useState(false)
+    // useEffect(()=>{
+    //     LoaderClick(1)
+    // },[])
     function LoaderClick(value){
         setIsVisibleLoader(true)
         setLoaderChange(!loaderChange)
         setTimeout(function(){
             props.wichVisible(value)
             setIsVisibleLoader(false)
-            console.log(isVisibleLoader)
+            // console.log(isVisibleLoader)
         },2400)
        
     }

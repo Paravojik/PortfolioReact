@@ -20,13 +20,13 @@ function LoaderComponent(props){
 //     console.log('curHe',currentHeight)
 // },[currentHeight])
 useEffect(function(){
-        console.log('Loader')
+  
         
        let xInterval= setInterval(function(){
         if(props.isVisibleLoader===false){
             clearInterval(xInterval)
         }
-        console.log(whichElemtIsVisible)
+   
         setWhichElemtIsVisible(whichElemtIsVisible++)
      
         if(whichElemtIsVisible>amountOfElemet.length+1){
@@ -34,7 +34,7 @@ useEffect(function(){
             setTimeout(function(){
                 setWhichElemtIsVisible(0)
                 
-                console.log(whichElemtIsVisible)
+        
             },1000)
             
         }

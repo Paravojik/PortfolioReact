@@ -1,3 +1,131 @@
+.ProjectsPage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.ProjectsPage .ProjectsPage__text {
+  font-size: 36px;
+  font-weight: 600;
+}
+.ProjectsPage .ProjectsPage__list {
+  width: 80%;
+  max-height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory {
+  width: 100%;
+  min-height: 130px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__right .ProjectReposytory__right__see {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  background-color: rgb(255, 221, 0);
+  transition: 0.1s;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(20, 20, 20, 0.5);
+  margin: 10px;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__right .ProjectReposytory__right__see:hover {
+  color: rgb(255, 221, 0);
+  background-color: rgb(20, 20, 20);
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left {
+  max-width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left .ProjectReposytory__left__name {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Sigmar", cursive;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left__languages {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left__languages .ProjectReposytory__left__languages__row {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 2px;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left__languages .ProjectReposytory__left__languages__bigger {
+  font-size: 20px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: 600;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left__topics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 16px;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left__topics .ProjectReposytory__left__topic {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  transition: 0.1s;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left__topics .ProjectReposytory__left__topic:hover {
+  background-color: rgb(255, 221, 0);
+  color: rgb(20, 20, 20);
+}
 
+@media screen and (max-width: 500px) {
+  .ProjectsPage .ProjectsPage__list .ProjectReposytory {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__right {
+    width: 100%;
+  }
+  .ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left {
+    max-width: 100%;
+    align-items: center;
+  }
+  .ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left__languages {
+    justify-content: center;
+  }
+  .ProjectsPage .ProjectsPage__list {
+    width: 100%;
+  }
+}
 
-/*# sourceMappingURL=MainPage.css.map */
+/*# sourceMappingURL=ProjectsPage.css.map */

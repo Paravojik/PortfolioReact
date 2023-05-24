@@ -1,11 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sigmar&display=swap');
-
+/* $orange:rgb(255, 221, 0);
+$black: rgb(31, 31, 31); */
+/* font-family: 'Sigmar', cursive; */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background-color: rgb(31, 31, 31);
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 221, 0); 
+border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 221, 0); 
 }
 .App{
   width: 100%;
@@ -17,4 +39,14 @@
   min-height: 100vh;
   padding-top: 10vh;
   background-color: white;
+  background-image: url('https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
+  background-color: rgb(20,20,20);
+  background-size: cover;
+}
+.text__withGradient{
+  background: rgb(237,237,235);
+  background: linear-gradient(227deg, rgba(237,237,235,0.9809173669467787) 18%, rgba(232,236,234,1) 20%, rgba(145,220,220,1) 53%, rgba(138,23,200,1) 95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }

@@ -27,7 +27,7 @@ $black: rgb(31, 31, 31);
         background-color: orange;
         width: calc(100%/6);
         height: 100vh;
-        box-shadow: inset 0 0 5px $black;
+        // box-shadow: inset 0 0 5px $black;
         border: 1px solid $black;
         transition: 0.2s;
         // transform: translateY(0);
