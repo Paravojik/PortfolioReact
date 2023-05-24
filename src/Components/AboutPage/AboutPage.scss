@@ -1,9 +1,42 @@
 
 @import '../mixins.scss';
 
-// $backgroundColor:green;
-$color:green;
 
+.AboutPage{
+@include flex(space-around,center,column);
+color: white;
+.AboutPage__text{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+.AboutPage__main{
+    height: 70vh;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    @include flex(space-between,center,row);
+    padding: 20px 40px;
+    padding-left: 0;
+    .AboutPage__left{
+        width: 30%;
+        height: 100%;
+        @include flex(space-between,center,column);
+        .AboutPage__left__photo{
+            width: 200px;
+            height: 260px;
+            border-radius: 5px;
+        }
+        .AboutPage__left__name{
+            font-size: 32px;
+            font-weight: 600;
+            font-family: 'Sigmar', cursive; 
+            text-align: center;
+        }
+    }
+
+}
+}
 // .MainPage{
 //     @include flex(space-between,center,row);
 //     width: 100%;

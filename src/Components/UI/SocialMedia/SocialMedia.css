@@ -1,0 +1,19 @@
+.SocialMedia{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SocialMedia__icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SocialMedia__icon__img{
+width: 100%;
+
+
+}
