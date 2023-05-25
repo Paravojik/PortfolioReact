@@ -16,8 +16,69 @@ color: white;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     @include flex(space-between,center,row);
-    padding: 20px 40px;
-    padding-left: 0;
+    padding: 20px 5px;
+
+    .AboutPage__right{
+        margin-left: 10px;
+        width: 70%;
+        height: 100%;
+        @include flex(space-between,center,column);
+        font-family: 'Comfortaa', cursive; 
+        .AboutPage__right__sec{
+            width: 100%;
+            @include flex(space-between,center,column);
+            .AboutPage__right__main{
+                font-size: 32px;
+                font-weight: 600;
+            }
+            .AboutPage__right__about__info{
+                font-size: 20px;
+            }
+            .AboutPage__right__sec__elements{
+                width: 100%;
+                @include flex(space-between,center,column);
+                height: 20vh;
+                overflow: auto;
+                overflow-x: hidden;
+       
+                .AboutPage__right__sec__ele{
+                    width: 100%;
+                    height: 100px;
+                    @include flex(space-between,flex-start,column);
+                    margin: 10px 0;
+
+                    .AboutPage__right__sec__ele__name{
+                        font-size: 28px;
+                        
+                    }
+                    .AboutPage__right__sec__ele__about{
+                        font-size: 20px;
+                    }
+                    .AboutPage__right__sec__ele__date{
+                        font-size: 24px;
+                    }
+                }
+                .AboutPage__background{
+                    width: 80%;
+                    background-color: white;
+                    border-radius: 5px;
+                    flex-direction: row;
+                    padding: 5px 10px;
+                    color: rgb(20, 20, 20);
+                    height: 120px;
+                    .AboutPage__right__sec__ele__left{
+                        width: 150px;
+                        height: 100%;
+                    }
+                    .AboutPage__right__sec__ele__right{
+                        width: 100%;
+                        height: 100%;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
     .AboutPage__left{
         width: 30%;
         height: 100%;
@@ -36,6 +97,57 @@ color: white;
     }
 
 }
+}
+@media screen and (max-width:850px){
+    .AboutPage .AboutPage__main{
+        width: 98%;
+    }
+}
+@media screen and (max-width:730px){
+    .AboutPage .AboutPage__main .AboutPage__right {
+        width: 60%;
+    }
+    .AboutPage .AboutPage__main .AboutPage__left {
+        width: 40%;
+    }
+    .AboutPage .AboutPage__main{
+      height: 80vh;
+      margin-top: 30px;
+    }
+    .AboutPage .AboutPage__main .AboutPage__right .AboutPage__right__sec .AboutPage__right__sec__elements .AboutPage__background .AboutPage__right__sec__ele__left{
+        display: none;
+    }
+    .AboutPage .AboutPage__main .AboutPage__right .AboutPage__right__sec .AboutPage__right__sec__elements .AboutPage__background{
+        width: 98%;
+    }
+}
+@media screen and (max-width:500px){
+
+    .AboutPage .AboutPage__main{
+  flex-direction: column;
+  height: 120vh;
+    }
+    .AboutPage .AboutPage__main .AboutPage__right {
+        width: 100%;
+        height: 1000px;
+    }
+    .AboutPage .AboutPage__main .AboutPage__left {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-height:600px){
+    .AboutPage .AboutPage__main{
+     
+        height: 120vh;
+          }
+}
+@media screen and (max-height:600px) and (max-width:730px){
+    .AboutPage .AboutPage__main{
+     
+        height: 210vh;
+          }
 }
 // .MainPage{
 //     @include flex(space-between,center,row);

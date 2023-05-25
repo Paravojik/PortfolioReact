@@ -5,7 +5,16 @@ import '../../App.css'
 function ProjectsPage(props){
 //     const apiUrl = 'https://api.github.com/users/paravojik/repos';
 
-
+    let arrOfExtraProjecrs=[
+        {node_id:'extar1',
+        name:'creative-depo',
+        language:'JavaScript',
+        updated_at:'2023-05-11/ dfsd',
+        topics:['portfolio','teamProject','react','header'],
+        homepage:'https://creative-depo-client.vercel.app',
+        html_url:'https://github.com/yuriy-kulakovskyi/creative-depo-client'
+    }
+    ]
     let [arrOfReposytories,setArrOfReposytories]=useState([])
     function fetchApi(){
         fetch('https://api.github.com/users/paravojik/repos?sort=created&per_page=1000')
@@ -25,8 +34,10 @@ function ProjectsPage(props){
             }
              
             )
-            console.log('res',res)
-            setArrOfReposytories(res)
+         
+            let resultWithExtra=res.concat(arrOfExtraProjecrs)
+            console.log('res',resultWithExtra)
+            setArrOfReposytories(resultWithExtra)
     })
         .catch(error => console.error(error));
     }
@@ -35,9 +46,13 @@ function ProjectsPage(props){
     //     console.log(arrOfReposytories)
     // },1000)
     // console.log('fetch',fetchApi())
+  
     useEffect(()=>{
+      
         fetchApi()
+        
         // console.log(arrOfReposytories)
+        // eslint-disable-next-line
     },[])
     return(
         <div className="ProjectsPage page" style={(props.wichVisiblePage===3) ? {display:"flex"}:{display:"none"} }>
