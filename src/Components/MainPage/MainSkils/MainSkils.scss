@@ -12,7 +12,7 @@ overflow: hidden;
     width: 50px;
     min-height: 50px;
     border-radius: 50%;
- 
+    user-select: none;
     position: absolute;
     @include flex(center,center,row);
     transition: 10s;

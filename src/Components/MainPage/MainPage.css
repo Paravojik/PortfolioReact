@@ -1,18 +1,9 @@
 .MainPage {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1;
-}
-.MainPage .MainPage__main {
-  width: 100%;
-  min-height: 50vh;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 30px;
+  z-index: 1;
 }
 .MainPage .MainPage__text {
   z-index: 1;
@@ -25,9 +16,14 @@
   backdrop-filter: blur(5px);
   border-radius: 10px;
   color: white;
+  margin-top: calc(50vh - 75px);
 }
 .MainPage .MainPage__text .MainPage__text__typed {
   font-size: 24px;
+}
+.MainPage #MainPage__SocialMedia {
+  z-index: 1;
+  margin-bottom: 20px;
 }
 .MainPage .MainPage__downoload {
   z-index: 1;
