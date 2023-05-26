@@ -25,7 +25,7 @@ function AboutPage(props){
             img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBJhhH35bMSWjArdUIc_5yPxTjCXyjV44drybW-emW&s'}
     ]
     return(
-        <div className="AboutPage page" style={(props.wichVisiblePage===2) ? {display:"flex"}:{display:"none"} }>
+        <div id='AboutPage' className="AboutPage page" style={(props.wichVisiblePage===2) ? {display:"flex"}:{display:"none"} }>
                  <div className="AboutPage__text text__withGradient" >My Projects</div>
             <div className="AboutPage__main">
             <div className="AboutPage__left">

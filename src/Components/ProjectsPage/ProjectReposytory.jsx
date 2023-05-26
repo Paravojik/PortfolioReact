@@ -9,9 +9,13 @@ function ProjectReposytory({item}){
             <div className="ProjectReposytory__left__name">
             {item.name}
             </div>
+           {item.description?
+            <div className="ProjectReposytory__left__description">Description: <span className="ProjectReposytory__left__description__black">
+                {item.description}</span> </div>:
+            null}
             <div className="ProjectReposytory__left__languages">
-                <div className="ProjectReposytory__left__languages__row"> language: <div className="ProjectReposytory__left__languages__bigger">{item.language}</div>; </div>
-           <div className="ProjectReposytory__left__languages__row"> last updated: <div className="ProjectReposytory__left__languages__bigger">{item.updated_at.substr(0,10)}</div></div>
+                <div className="ProjectReposytory__left__languages__row"> Language: <div className="ProjectReposytory__left__languages__bigger">{item.language}</div>; </div>
+           <div className="ProjectReposytory__left__languages__row"> Last updated: <div className="ProjectReposytory__left__languages__bigger">{item.updated_at.substr(0,10)}</div></div>
            
             </div>
             <div className="ProjectReposytory__left__topics">

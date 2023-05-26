@@ -22,8 +22,8 @@ function Header(props){
             <div className="Header__left">V.Mykhaloiko</div>
             <div className="Header__right">
                 <div className="Header__right__textPage" onClick={()=>LoaderClick(1)}>Home</div>
-                <div className="Header__right__textPage" onClick={()=>LoaderClick(2)}>About</div>
-                <div className="Header__right__textPage" onClick={()=>LoaderClick(3)}>Projects</div>  
+                <div  className="Header__right__textPage" onClick={()=>LoaderClick(2)}>About</div>
+                <div  className="Header__right__textPage" onClick={()=>LoaderClick(3)}>Projects</div>  
             </div>
             <LoaderComponent loaderChange={loaderChange} isVisibleLoader={isVisibleLoader}/>
         </div>

@@ -12,7 +12,8 @@ function ProjectsPage(props){
         updated_at:'2023-05-11/ dfsd',
         topics:['portfolio','teamProject','react','header'],
         homepage:'https://creative-depo-client.vercel.app',
-        html_url:'https://github.com/yuriy-kulakovskyi/creative-depo-client'
+        html_url:'https://github.com/yuriy-kulakovskyi/creative-depo-client',
+        description:`It's team project, builded on React. I created header`
     }
     ]
     let [arrOfReposytories,setArrOfReposytories]=useState([])
@@ -55,7 +56,7 @@ function ProjectsPage(props){
         // eslint-disable-next-line
     },[])
     return(
-        <div className="ProjectsPage page" style={(props.wichVisiblePage===3) ? {display:"flex"}:{display:"none"} }>
+        <div id='ProjectsPage' className="ProjectsPage page" style={(props.wichVisiblePage===3) ? {display:"flex"}:{display:"none"} }>
             <div className="ProjectsPage__text text__withGradient" >My Projects</div>
             <div className="ProjectsPage__list">
                 {arrOfReposytories.map((item)=>{

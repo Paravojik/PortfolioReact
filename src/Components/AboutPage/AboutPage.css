@@ -10,7 +10,7 @@
   font-weight: 600;
 }
 .AboutPage .AboutPage__main {
-  height: 70vh;
+  min-height: 70vh;
   width: 80%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
@@ -123,7 +123,6 @@
     width: 40%;
   }
   .AboutPage .AboutPage__main {
-    height: 80vh;
     margin-top: 30px;
   }
   .AboutPage .AboutPage__main .AboutPage__right .AboutPage__right__sec .AboutPage__right__sec__elements .AboutPage__background .AboutPage__right__sec__ele__left {
@@ -132,30 +131,22 @@
   .AboutPage .AboutPage__main .AboutPage__right .AboutPage__right__sec .AboutPage__right__sec__elements .AboutPage__background {
     width: 98%;
   }
+  .AboutPage .AboutPage__main .AboutPage__right .AboutPage__right__sec .AboutPage__right__sec__elements {
+    height: 200px;
+  }
 }
 @media screen and (max-width: 500px) {
   .AboutPage .AboutPage__main {
     flex-direction: column;
-    height: 120vh;
   }
   .AboutPage .AboutPage__main .AboutPage__right {
     width: 100%;
-    height: 1000px;
+    height: 60%;
   }
   .AboutPage .AboutPage__main .AboutPage__left {
     width: 100%;
-    height: 600px;
+    height: 40%;
     margin-bottom: 20px;
-  }
-}
-@media screen and (max-height: 600px) {
-  .AboutPage .AboutPage__main {
-    height: 120vh;
-  }
-}
-@media screen and (max-height: 600px) and (max-width: 730px) {
-  .AboutPage .AboutPage__main {
-    height: 210vh;
   }
 }
 

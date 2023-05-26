@@ -13,9 +13,14 @@ $color:green;
    
 // }
 .MainPage{
-    @include flex(center,center,column);
+    @include flex(flex-end,center,column);
     z-index: 1;
-
+.MainPage__main{
+    width: 100%;
+    min-height: 50vh;
+    @include flex(space-between,center,column);
+    padding-bottom: 30px;
+}
 
     .MainPage__text{
         z-index: 1;
@@ -40,8 +45,9 @@ $color:green;
         width: 300px;
         height: 60px;
         border-radius: 5px;
-        margin-top: 30px;
+        margin: 30px 0;
         @include flex(center,center,row);
+
         .MainPage__downoload__img{
             width: 40px;
             height: 40px;

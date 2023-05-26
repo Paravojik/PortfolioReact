@@ -62,6 +62,16 @@ $color:green;
                 max-width: 70%;
                 height: 100%;
                 @include flex(space-between,flex-start,column);
+                .ProjectReposytory__left__description{
+                    font-size: 16px;
+                    font-weight: 400;
+                 
+                    .ProjectReposytory__left__description__black{
+                        font-size: 24px;
+                        font-weight: 600;
+
+                    }
+                }
                 .ProjectReposytory__left__name{
                     font-size: 24px;
                     font-weight: 600;
@@ -130,6 +140,9 @@ $color:green;
     }
     .ProjectsPage .ProjectsPage__list {
         width: 100%;
+    }
+    .ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left__topics {
+        justify-content: center;
     }
 }
 // .MainPage{

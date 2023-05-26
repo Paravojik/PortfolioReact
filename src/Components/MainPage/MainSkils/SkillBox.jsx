@@ -18,7 +18,7 @@ function SkillBox(props){
         let curWidth =Math.floor(Math.random()*100)
         setCurrentWidth((curWidth<5)? curWidth+5:curWidth-5)
             // console.log(props.value)
-        },10000)
+        },Math.random()*5000+5000)
   
     },[])
     useEffect(function(){
@@ -36,15 +36,16 @@ function SkillBox(props){
     },[props.wichVisiblePage])
     function openSkill(){
         setIsVisibleInfo(true)
-        document.getElementById('MainPage__text').style.zIndex='0'
-        document.getElementById('MainPage__downoload').style.zIndex='0'
+        
+        document.getElementById('MainPage__main').style.zIndex='0'
+     
     }
     function closeSkill(close){
         // setIsVisibleInfo(close)
         setTimeout(function(){
             setIsVisibleInfo(close)
-            document.getElementById('MainPage__text').style.zIndex='1'
-            document.getElementById('MainPage__downoload').style.zIndex='1'
+            document.getElementById('MainPage__main').style.zIndex='1'
+         
         },10)
         console.log('fs',isVisibleInfo)
     }

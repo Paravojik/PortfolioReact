@@ -65,6 +65,14 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left .ProjectReposytory__left__description {
+  font-size: 16px;
+  font-weight: 400;
+}
+.ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left .ProjectReposytory__left__description .ProjectReposytory__left__description__black {
+  font-size: 24px;
+  font-weight: 600;
+}
 .ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left .ProjectReposytory__left__name {
   font-size: 24px;
   font-weight: 600;
@@ -125,6 +133,9 @@
   }
   .ProjectsPage .ProjectsPage__list {
     width: 100%;
+  }
+  .ProjectsPage .ProjectsPage__list .ProjectReposytory .ProjectReposytory__left__topics {
+    justify-content: center;
   }
 }
 

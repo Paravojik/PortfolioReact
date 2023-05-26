@@ -1,6 +1,6 @@
 @import '../mixins.scss';
 $orange:rgb(255, 221, 0);
-$black: rgb(31, 31, 31);
+$black: rgb(20, 20, 20);
 
 .Header{
     width: 100%;
@@ -9,7 +9,7 @@ $black: rgb(31, 31, 31);
     background-color: $orange;
     color: $black;
     position: absolute;
-    padding: 0 50px;
+    padding: 10px 50px;
     .Header__left{
         font-size: 32px;
         font-weight: 400;
@@ -24,6 +24,8 @@ $black: rgb(31, 31, 31);
            font-weight: 400;
            cursor: pointer;
            user-select: none;
+           color: rgb(20, 20, 20);
+           text-decoration: none;
           
         }
     }
@@ -34,6 +36,6 @@ $black: rgb(31, 31, 31);
     }
     .Header{
         justify-content: center;
-        padding: 0;
+        padding: 10px 0;
     }
 }
