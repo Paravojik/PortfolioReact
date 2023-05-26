@@ -36,6 +36,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  margin: 20px 0;
 }
 .AboutPage .AboutPage__main .AboutPage__right .AboutPage__right__sec .AboutPage__right__main {
   font-size: 32px;
@@ -79,7 +80,7 @@
   flex-direction: row;
   padding: 5px 10px;
   color: rgb(20, 20, 20);
-  height: 120px;
+  min-height: 120px;
 }
 .AboutPage .AboutPage__main .AboutPage__right .AboutPage__right__sec .AboutPage__right__sec__elements .AboutPage__background .AboutPage__right__sec__ele__left {
   width: 150px;
@@ -108,6 +109,7 @@
   font-weight: 600;
   font-family: "Sigmar", cursive;
   text-align: center;
+  margin: 30px 0;
 }
 
 @media screen and (max-width: 850px) {

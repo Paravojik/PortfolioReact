@@ -27,6 +27,7 @@ color: white;
         .AboutPage__right__sec{
             width: 100%;
             @include flex(space-between,center,column);
+            margin: 20px 0;
             .AboutPage__right__main{
                 font-size: 32px;
                 font-weight: 600;
@@ -65,7 +66,7 @@ color: white;
                     flex-direction: row;
                     padding: 5px 10px;
                     color: rgb(20, 20, 20);
-                    height: 120px;
+                    min-height: 120px;
                     .AboutPage__right__sec__ele__left{
                         width: 150px;
                         height: 100%;
@@ -83,6 +84,7 @@ color: white;
         width: 30%;
         height: 100%;
         @include flex(space-between,center,column);
+        // padding: 0 10px;
         .AboutPage__left__photo{
             width: 200px;
             height: 260px;
@@ -93,6 +95,7 @@ color: white;
             font-weight: 600;
             font-family: 'Sigmar', cursive; 
             text-align: center;
+            margin: 30px 0;
         }
     }
 
